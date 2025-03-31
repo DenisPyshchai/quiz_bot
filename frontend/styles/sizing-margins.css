@@ -1,0 +1,150 @@
+html {
+    --lumo-font-size-xxxl: 2.5vw;
+    --lumo-font-size-xxl: 1.75vw;
+    --lumo-font-size-xl: 1.375vw;
+    --lumo-font-size-l: 1.125vw;
+    --lumo-font-size-m: 1vw;
+    --lumo-font-size-s: 0.875vw;
+    --lumo-font-size-xs: 0.8125vw;
+    --lumo-font-size-xxs: 0.75vw;
+    --lumo-size-xs: 1.625vw;
+    --lumo-size-s: 1.875vw;
+    --lumo-size-m: 2.25vw;
+    --lumo-size-l: 2.75vw;
+    --lumo-size-xl: 3.5vw;
+}
+
+vaadin-text-field::part(label) {
+    padding-bottom: 1vw;
+}
+
+vaadin-password-field::part(label) {
+    padding-bottom: 1vw;
+}
+
+.menu-horizontal {
+    aspect-ratio: 1459.2 / 139;
+    width: 95vw;
+}
+
+.normal-button {
+    aspect-ratio: 153.6 / 34.75;
+    font-family: Tahoma, serif;
+    font-size: 1vw;
+    width: auto;
+    min-width: 10vw;
+    margin: 0.5vw;
+    background: hsla(214, 53%, 23%, 0.16);
+}
+
+.small-button {
+    aspect-ratio: 107.52 / 34.75;
+    font-family: Tahoma, serif;
+    font-size: 1vw;
+    width: auto;
+    min-width: 7vw;
+    margin: 0.5vw;
+    background: hsla(214, 53%, 23%, 0.16);
+}
+
+.language-select {
+    aspect-ratio: 76.8 / 34.75 ;
+    font-family: Tahoma, serif;
+    font-size: 1vw;
+    width: 5vw;
+    margin: 0.5vw;
+}
+
+.language-select::part(input-field) {
+    background: hsla(214, 53%, 23%, 0.16);
+}
+
+.tabs {
+    aspect-ratio: 230.4 / 486.5;
+    width: 15vw;
+    height: 70vh;
+}
+
+.tab {
+    font-family: Tahoma, serif;
+    font-size: 1vw;
+}
+
+.hr {
+    color: #406E8E;
+    background: hsla(214, 53%, 23%, 0.16);
+}
+
+.normal-text-field {
+    aspect-ratio: 614.4 / 62.55;
+    font-family: Tahoma, serif;
+    font-size: 1vw;
+    width: 40vw;
+}
+
+.normal-text-field::part(input-field) {
+    background: hsla(214, 53%, 23%, 0.16);
+}
+
+.normal-password-field {
+    aspect-ratio: 614.4 / 62.55;
+    font-family: Tahoma, serif;
+    font-size: 1vw;
+    width: 40vw;
+}
+
+.normal-password-field::part(input-field) {
+    background: hsla(214, 53%, 23%, 0.16);
+}
+
+.small-text-field {
+    aspect-ratio: 307.2 / 62.55;
+    font-family: Tahoma, serif;
+    font-size: 1vw;
+    width: 20vw;
+}
+
+.small-text-field::part(input-field) {
+    background: hsla(214, 53%, 23%, 0.16);
+}
+
+.h1 {
+    color: #406E8E;
+    font-family: Tahoma, serif;
+    font-size: 3vw;
+    width: 20vw;
+    height: 10vh;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.drawer-toggle {
+    aspect-ratio: 61.44 / 41.7;
+    font-family: Tahoma, serif;
+    font-size: 1.5vw;
+    width: 4vw;
+}
+
+.quiz-bot-icon {
+    aspect-ratio: 107.52 / 48.65;
+    width: 7vw;
+    object-fit: contain;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.telegram-icon {
+    aspect-ratio: 15.36 / 13.9;
+    padding-right: 0.5vw;
+    width: 1vw;
+    object-fit: contain;
+    cursor: pointer;
+}

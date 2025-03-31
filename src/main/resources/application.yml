@@ -1,0 +1,9 @@
+server:
+  port: 80
+  management: 8084
+  additionalPorts: 443
+  address: 0.0.0.0
+ssl:
+  alias: quiz-bot
+  password: password
+  path: META-INF/resources/ssl/certificate.*

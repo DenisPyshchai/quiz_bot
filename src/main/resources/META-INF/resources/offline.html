@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>No connection to the server!</title>
+
+  <style>
+      body {
+          font-family: Tahoma, serif;
+          font-size: 1vw;
+          margin: 2vw;
+      }
+
+      h1 {
+          color: #406E8E;
+
+      }
+
+      p {
+          margin-block: 1vw;
+      }
+
+      button {
+          display: block;
+          font-family: Tahoma, serif;
+          font-size: 1vw;
+          width: 10vw;
+          height: 5vh;
+      }
+  </style>
+</head>
+<body>
+<h1>No connection to the server!</h1>
+
+<p>
+  The page will automatically reload once the connection is re-established.
+  Click the button below to try reloading manually.
+</p>
+<button type="button">Reload ⤾</button>
+
+<!-- Inline the page's JavaScript file. -->
+<script>
+  document.querySelector('button').addEventListener('click', () => {
+    window.location.reload();
+  });
+
+  // Listen to changes in the network state, reload when online.
+  // This handles the case when the device is completely offline.
+  window.addEventListener('online', () => {
+    window.location.reload();
+  });
+
+  // Check if the server is responding & reload the page if it is.
+  // This handles the case when the device is online, but the server
+  // is offline or misbehaving.
+  async function checkNetworkAndReload() {
+    try {
+      const response = await fetch('.');
+      // Verify we get a valid response from the server
+      if (response.status >= 200 && response.status < 500) {
+        window.location.reload();
+        return;
+      }
+    } catch {
+      // Unable to connect to the server, ignore.
+    }
+    window.setTimeout(checkNetworkAndReload, 2500);
+  }
+
+  checkNetworkAndReload();
+
+</script>
+</body>
+</html>

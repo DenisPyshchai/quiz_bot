@@ -1,0 +1,25 @@
+:host {
+    --app-layout-drawer-offset-size: 10vw;
+    --app-layout-drawer-height: 100vh;
+    --app-layout-navbar-offset-size: 12vh;
+    --app-layout-navbar-width: 100vw;
+    background-image: url("img/main-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+[part="drawer"] {
+    width: var(--app-layout-drawer-offset-size);
+    height: var(--app-layout-drawer-height);
+    background-image: url("img/drawer-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+[part="navbar"] {
+    width: var(--app-layout-navbar-width);
+    height: var(--app-layout-navbar-offset-size);
+    background-image: url("img/navbar-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
